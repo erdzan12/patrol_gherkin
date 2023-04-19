@@ -4,8 +4,8 @@ import 'package:gherkin/gherkin.dart';
 
 import '../../gherkin_suite_test.dart';
 
-final iAcceptCameraPermissions = then<MyWorld>(
-  'I tap accept camera permissions',
+final iAcceptPermissions = then<MyWorld>(
+  'I tap accept permissions',
   (context) async {
     try {
       await context.world.nativeAutomator.grantPermissionWhenInUse();

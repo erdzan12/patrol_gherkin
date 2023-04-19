@@ -7,7 +7,7 @@ import 'package:gherkin/gherkin.dart';
 
 import 'package:patrol_gherkin/main.dart' as app;
 
-import 'gherkin/steps/i_accept_camera_permissions.dart';
+import 'gherkin/steps/i_accept_permissions.dart';
 part 'gherkin_suite_test.g.dart';
 
 Future<MyWorld> worldCreator(
@@ -54,7 +54,7 @@ Future<void> main() async {
     ],
     defaultTimeout: const Duration(seconds: 20),
     stepDefinitions: [
-      iAcceptCameraPermissions,
+      iAcceptPermissions,
     ],
     createWorld: (TestConfiguration config) =>
         worldCreator(config, nativeAutomator),

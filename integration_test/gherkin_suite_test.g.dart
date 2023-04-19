@@ -55,7 +55,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
               bool skip,
             ) async {
               return await runStep(
-                name: 'Then I tap accept camera permissions',
+                name: 'Then I tap accept permissions',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,
@@ -67,7 +67,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
               bool skip,
             ) async {
               return await runStep(
-                name: 'Then I tap accept camera permissions',
+                name: 'Then I tap accept permissions',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,
